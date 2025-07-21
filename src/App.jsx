@@ -61,64 +61,68 @@ function App() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-12 shadow-2xl animate-float">
-            <div className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6 animate-pulse">
-              🔥 Offre Limitée 2025
-            </div>
-            
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">
-              Gagnez jusqu'à 220€ avec Boursobank
-            </h1>
-            
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Utilisez le code parrain exclusif et profitez de la meilleure banque digitale de France. 
-              Ouverture de compte 100% gratuite et rapide.
-            </p>
+  <div className="max-w-4xl mx-auto text-center">
+    <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-12 shadow-2xl animate-float">
+      <div className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6 animate-pulse">
+        🔥 Offre Limitée 2025
+      </div>
+      
+      <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">
+        Gagnez jusqu'à 220€ avec Boursobank
+      </h1>
+      
+      <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Utilisez le code parrain exclusif et profitez de la meilleure banque digitale de France. 
+        Ouverture de compte 100% gratuite et rapide.
+      </p>
 
-            {/* Code Box */}
-            <div className="bg-indigo-50 border-4 border-dashed border-indigo-300 rounded-2xl p-8 mb-8 max-w-md mx-auto">
-              <div className="text-3xl font-bold text-indigo-600 tracking-wider mb-4">
-                ARNA7525
-              </div>
-              <Button 
-                onClick={copyCode}
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-all duration-300"
-              >
-                {copied ? (
-                  <>
-                    <Check className="w-4 h-4 mr-2" />
-                    Copié !
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-4 h-4 mr-2" />
-                    Copier le code
-                  </>
-                )}
-              </Button>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
-              <a 
-                href="https://bour.so/p/rxldlayolpb" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg text-center h-16 w-full sm:w-64"
-              >
-                🎯 J'ouvre mon compte maintenant
-              </a>
-              <a 
-                href="#avantages" 
-                onClick={() => scrollToSection("avantages")}
-                className="flex items-center justify-center border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 border-2 h-16 w-full sm:w-64"
-              >
-                ✨ Voir les avantages
-              </a>
-            </div>
-          </div>
+      {/* Code Box */}
+      <div className="bg-indigo-50 border-4 border-dashed border-indigo-300 rounded-2xl p-8 mb-8 max-w-md mx-auto">
+        <div className="text-3xl font-bold text-indigo-600 tracking-wider mb-4">
+          ARNA7525
         </div>
-      </section>
+        <Button 
+          onClick={copyCode}
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-all duration-300"
+        >
+          {copied ? (
+            <>
+              <Check className="w-4 h-4 mr-2" />
+              Copié !
+            </>
+          ) : (
+            <>
+              <Copy className="w-4 h-4 mr-2" />
+              Copier le code
+            </>
+          )}
+        </Button>
+      </div>
+
+      <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
+        <a 
+          href="https://bour.so/p/rxldlayolpb" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-4 rounded-full text-base font-bold transition-all duration-300 hover:scale-105 shadow-lg text-center min-h-[60px] w-full sm:w-64 leading-snug whitespace-normal break-words"
+          style={{ lineHeight: 1.3, wordBreak: "break-word" }}
+        >
+          🎯 J'ouvre mon compte
+          <br className="sm:hidden" />
+          maintenant
+        </a>
+        <a 
+          href="#avantages" 
+          onClick={() => scrollToSection("avantages")}
+          className="flex items-center justify-center border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white px-6 py-4 rounded-full text-base font-semibold transition-all duration-300 border-2 min-h-[60px] w-full sm:w-64 leading-snug whitespace-normal break-words"
+          style={{ lineHeight: 1.3, wordBreak: "break-word" }}
+        >
+          ✨ Voir les avantages
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* QR Code Section */}
       <section className="py-16 bg-white">
