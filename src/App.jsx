@@ -107,7 +107,7 @@ function App() {
           className="flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-4 rounded-full text-base font-bold transition-all duration-300 hover:scale-105 shadow-lg text-center min-h-[60px] w-full sm:w-64 leading-snug whitespace-normal break-words"
           style={{ lineHeight: 1.3, wordBreak: "break-word" }}
         >
-          🎯 J'ouvre mon compte
+          🎯 J'ouvre mon compte{' '}
           <br className="sm:hidden" />
           maintenant
         </a>
